@@ -81,18 +81,21 @@ body{
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px gray;
-    padding: 10px;
+    padding: 15px;
 }
 
 .display input{
     height: 120px;
-    width: 45vh;
+    width: 100%;
     /* padding: 10px; */
     font-size: 22px;
     text-align: right;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 50px;
 }
 
 .display{
@@ -118,12 +121,13 @@ body{
     border: 0;
     color: yellow;
     background-color: black;
-    border-radius: 5px;
-    margin: 5px 2px;
+    border-radius: 8px;
+    margin: 3px 0px;
+    font-size: 20px;
 }
 
 .span-two{
-    width: 125px;
+    width: 47%;
 }
 
 
