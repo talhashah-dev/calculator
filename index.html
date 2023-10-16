@@ -7,32 +7,35 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="calculator">
-        <div class="output">
-            <div class="result">
-                <p id="result">0</p>
+
+    <div class="container">
+            <div class="display">
+                <input type="text">
             </div>
-        </div>
-        <div class="buttons">
-            <button class="clear" onclick="clearResult()">C</button>
-            <button class="number" onclick="appendToResult('7')">7</button>
-            <button class="number" onclick="appendToResult('8')">8</button>
-            <button class="number" onclick="appendToResult('9')">9</button>
-            <button class="operator" onclick="appendToResult('+')">+</button>
-            <button class="number" onclick="appendToResult('4')">4</button>
-            <button class="number" onclick="appendToResult('5')">5</button>
-            <button class="number" onclick="appendToResult('6')">6</button>
-            <button class="operator" onclick="appendToResult('-')">-</button>
-            <button class="number" onclick="appendToResult('1')">1</button>
-            <button class="number" onclick="appendToResult('2')">2</button>
-            <button class="number" onclick="appendToResult('3')">3</button>
-            <button class="operator" onclick="appendToResult('*')">*</button>
-            <button class="number" onclick="appendToResult('0')">0</button>
-            <button class="number" onclick="appendToResult('.')">.</button>
-            <button class="equal" onclick="calculateResult()">=</button>
-            <button class="operator" onclick="appendToResult('/')">/</button>
+            <div class="buttons-container">
+                    <button class="span-two button">AC</button>
+                    <button class="button">DEL</button>
+                    <button class="button">/</button>
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button">*</button>
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button">+</button>
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button">-</button>
+                    <button class="button">.</button>
+                    <button class="button">0</button>
+                    <button class="span-two button">=</button>
+                </div>
         </div>
     </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
