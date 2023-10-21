@@ -9,7 +9,7 @@ function calculate(){
     result.value = finalResult;
 }
 
-function clear(){
+function allClear(){
     result.value = "";
 }
 
