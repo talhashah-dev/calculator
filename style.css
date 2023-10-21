@@ -27,7 +27,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input{
+input {
   height: 150px;
   width: 96%;
   font-size: 22px;
@@ -41,7 +41,6 @@ input{
   background-color: rgb(37, 37, 37);
   color: white;
 }
-
 
 .buttons-container {
   display: flex;
@@ -67,7 +66,7 @@ input{
 }
 
 .button:active {
-  transform: scale(0.9)
+  transform: scale(0.9);
 }
 
 .operator {

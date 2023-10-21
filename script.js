@@ -1,18 +1,21 @@
-let result = document.getElementById("output")
-function screen(number){
-    output.value += number;
+let result = document.getElementById("output");
+
+let calculate = (number) => {
+  result.value += number;
+};
+
+let equal = () => {
+  try {
+    result.value = eval(result.value); // it does the calculation
+  } catch (err) {
+    alert("Please enter a valid Input!"); // by passign an invalid input it will show an error in the alert box
+  }
+};
+
+function allClear() {
+  result.value = "";
 }
 
-function calculate(){
-    let finalNumber = result.value;
-    let finalResult = eval(finalNumber);
-    result.value = finalResult;
-}
-
-function allClear(){
-    result.value = "";
-}
-
-function erase(){
-    result.value = result.value.slice(0,-1);
+function del() {
+  result.value = result.value.slice(0, -1);
 }
