@@ -4,9 +4,9 @@ function screen(number){
 }
 
 function calculate(){
-    let final_number = result.value;
-    let final_result = eval(final_number);
-    result.value = final_result;
+    let finalNumber = result.value;
+    let finalResult = eval(finalNumber);
+    result.value = finalResult;
 }
 
 function clear(){
