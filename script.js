@@ -1,22 +1,18 @@
-let display = document.querySelector(".display");
-let buttons = document.querySelectorAll("button");
-let operator = ["%", "*", "+", "-", "="];
-let output = "";
+let result = document.getElementById("output")
+function screen(number){
+    output.value += number;
+}
 
-let calculate = (btnValue) => {
-    if (btnValue === "=" && output !== "") {
-        output = eval(output.replace("%", "/100"));
-    } else if (btnValue === "AC") {
-        output = "";
-    } else if (btnValue === "DEL") {
-        output = output.toString().slice(0, -1);
-    } else {
-        if (output === "" && operator.includes(btnValue)) return;
-        output += btnValue;
-    }
-    display.value = output;
-};
+function calculate(){
+    let final_number = result.value;
+    let final_result = eval(final_number);
+    result.value = final_result;
+}
 
-buttons.forEach((button) => {
-    button.addEventListener("click", (e) => calculate(e.target.dataset.value));
-});
+function clear(){
+    result.value = "";
+}
+
+function erase(){
+    result.value = result.value.slice(0,-1);
+}

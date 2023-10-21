@@ -9,30 +9,31 @@
 </head>
 <body>
     <div class="container">
-                <input type="number" placeholder="0" class="display" autofocus>
+                <input type="text" placeholder="0" id="output" autofocus>
             <div class="buttons-container">
-                    <button data-value="AC" class="span-two button operator">AC</button>
-                    <button data-value="DEL" class="button operator" >DEL</button>
-                    <button data-value="%" class="button operator" >%</button>
+                    <button onclick="clear()" class="button operator">AC</button>
+                    <button onclick="erase()" class="button operator" >DEL</button>
+                    <button onclick="screen('%')" class="button operator" >%</button>
+                    <button onclick="screen('/')" class="button operator" >/</button>
 
-                    <button data-value="1" class="button" >1</button>
-                    <button data-value="2" class="button" >2</button>
-                    <button data-value="3" class="button" >3</button>
-                    <button data-value="*" class="button operator" >*</button>
+                    <button onclick="screen('1')" class="button" >1</button>
+                    <button onclick="screen('2')" class="button" >2</button>
+                    <button onclick="screen('3')" class="button" >3</button>
+                    <button onclick="screen('*')" class="button operator" >*</button>
 
-                    <button data-value="4" class="button" >4</button>
-                    <button data-value="5" class="button" >5</button>
-                    <button data-value="6" class="button" >6</button>
-                    <button data-value="+" class="button operator" >+</button>
+                    <button onclick="screen('4')" class="button" >4</button>
+                    <button onclick="screen('5')" class="button" >5</button>
+                    <button onclick="screen('6')" class="button" >6</button>
+                    <button onclick="screen('+')" class="button operator" >+</button>
 
-                    <button data-value="7" class="button" >7</button>
-                    <button data-value="8" class="button" >8</button>
-                    <button data-value="9" class="button" >9</button>
-                    <button data-value="-" class="button operator" >-</button>
+                    <button onclick="screen('7')" class="button" >7</button>
+                    <button onclick="screen('8')" class="button" >8</button>
+                    <button onclick="screen('9')" class="button" >9</button>
+                    <button onclick="screen('-')" class="button operator" >-</button>
 
-                    <button data-value="." class="button" >.</button>
-                    <button data-value="0" class="button" >0</button>
-                    <button data-value="=" class="button span-two operator" >=</button>
+                    <button onclick="screen('.')" class="button" >.</button>
+                    <button onclick="screen('0')" class="button" >0</button>
+                    <button onclick="calculate()" class="button span-two operator" >=</button>
                 </div>
         </div>
     </div>
