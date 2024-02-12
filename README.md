@@ -1,4 +1,4 @@
 # Javascript Calculator
-Creating a basic Calculator using HTML,CSS and Javascript.
+A basic Calculator made with HTML,CSS and Javascript.
 
 
